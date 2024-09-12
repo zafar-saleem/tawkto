@@ -1,7 +1,7 @@
 <template>
   <div id="container">
     <div v-if="categories.length" class="categories-container">
-      <div v-for="category in categories" :key="category.id" class="category-card">
+      <div v-for="category in categories" :key="category.id" v-if="category.enabled === true" class="category-card">
         <font-awesome-icon :icon="['fa', category.icon]" class="card-icon" />
         <h2>{{ category.title }}</h2>
         <span class="article-counter">
@@ -31,8 +31,7 @@ export default {
   methods: {
     async getCategories() {
       const json = await Axios.get("http://localhost:9000/api/categories");
-      console.log(json.data);
-      this.categories = json.data;
+      this.categories = json.data.sort((a, b) => a.order > b.order ? 1 : -1);
     },
   },
 };
