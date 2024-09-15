@@ -1,4 +1,6 @@
-**Disclaimer**
+**Disclaimers**
+
+I use `vuejs` for the first time. I am a heavy Reactjs Engineer however, I really enjoyed working on this vuejs project and I would like to transition into vuejs when given the opportunity.
 
 There are certain differences between the design in `Figma` and the design provided in `PDF` file. Design in the pdf file `Category` page, there is `Other Category` section at the bottom, which is missing in `Figma`. Since Figma designs are considered to be production level designs therefore, I followed `Figma` design. In real world, I would communicate with design teams for further clarification.
 
