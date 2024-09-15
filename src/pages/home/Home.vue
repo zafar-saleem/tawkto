@@ -1,13 +1,13 @@
 <template>
   <div id="container">
-    <div v-if="store.categories !== undefined && store.categories.length" class="categories-container">
-      <router-link :to="{ name: 'Articles', params: { id: category.id }}" v-for="category in store.categories" :key="category.id" v-if="category.enabled === true" class="category-card">
+    <div v-show="store.categories !== undefined && store.categories.length" class="categories-container">
+      <router-link :to="{ name: 'Articles', params: { id: category.id }}" v-for="category in store.categories" :key="category.id" v-show="category.enabled === true" class="category-card">
         <font-awesome-icon :icon="['fa', category.icon]" class="card-icon" />
         <h2 class="primary-title">{{ category.title }}</h2>
         <span class="article-counter">
           {{ category.totalArticle }}
-          <span v-if="category.totalArticle < 2">article</span>
-          <span v-if="category.totalArticle > 1">articles</span>
+          <span v-show="category.totalArticle < 2">article</span>
+          <span v-show="category.totalArticle > 1">articles</span>
         </span>
         <TimeAgo :updatedOn="category.updatedOn" />
       </router-link>

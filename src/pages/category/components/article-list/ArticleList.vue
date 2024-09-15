@@ -1,7 +1,7 @@
 <template>
   <div id="articles-container">
     <ul>
-      <li v-for="article in this.articles" v-if="article.status === 'published'">
+      <li v-for="article in this.articles" v-show="article.status === 'published'">
         <div class="icon-container">
           <font-awesome-icon :icon="['fas', article.icon]" class="note-icon" />
         </div>
