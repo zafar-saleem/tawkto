@@ -1,10 +1,16 @@
 **Disclaimer**
 
+There are certain differences between the design in `Figma` and the design provided in `PDF` file. Design in the pdf file `Category` page, there is `Other Category` section at the bottom, which is missing in `Figma`. Since Figma designs are considered to be production level designs therefore, I followed `Figma` design. In real world, I would communicate with design teams for further clarification.
+
+In this case, I thought it will be time consuming to communicate with HR team and HR communicate with development team and I receive information back from HR(HR would be used as a relay department in this case). I wanted to avoid these delays. I hope this is fine with everyone.
+
 For this task I used font-awesome and there were few icons unavailable in free version. Therefore, you might not see them rendered in their respective components.
 
 Secondly, I use reactivity API instead of utilising any open source state management libraries such as pinia or vuex. I decided this not to over complicate things.
 
 Thirdly, the search feature is only working for the `Home` page as it is clearly stated in the technical assignment to be functioning on the `Home` page.
+
+Furthermore, the font-awesome has solid versions of icons are free therefore, I only used the solid version which are different than in figma design.
 
 In addition, I also add additional aliases in webpack config file to make it possible for developer to import files with absolute paths.
 
@@ -46,6 +52,7 @@ Below are the core technologies I used for this project.
 * [Font-Awesome](https://fontawesome.com/)
 * [Moment](https://momentjs.com/)
 * [Browserslist](https://github.com/browserslist/browserslist)
+* [Visual Studio Code](https://code.visualstudio.com/)
 
 
 ## Getting Started
