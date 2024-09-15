@@ -1,0 +1,65 @@
+@import '../../scss/_variables.scss';
+
+#header-text{
+  text-align: center;
+  font-family: $font-family;
+  color: $text-black;
+  padding: 20px;
+
+  h1{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 34px;
+    line-height: 41px;
+  }
+
+  h3{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  input {
+    width: 720px;
+    height: 60px;
+    top: 165px;
+    left: 1000px;
+    gap: 0px;
+    opacity: 0px;
+    border: 1px solid $light-white;
+    padding: 0 1em;
+
+    @media screen and (max-width: 899px) {
+      width: 100%;
+      margin-bottom: 10px;
+    }
+  }
+
+  button {
+    width: 80px;
+    height: 60px;
+    top: 165px;
+    left: 1000px;
+    gap: 0px;
+    opacity: 0px;
+    margin-left: -3px;
+    background: $green;
+    border: 1px solid $green;
+
+    @media screen and (max-width: 899px) {
+      width: 100%;
+    }
+
+    svg {
+      width: 18px;
+      height: 18px;
+      top: 186px;
+      left: 951px;
+      gap: 0px;
+      border: 2.5px 0px 0px 0px;
+      opacity: 0px;
+      color: $white;
+    }
+  }
+}

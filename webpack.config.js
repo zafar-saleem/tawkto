@@ -29,19 +29,27 @@ module.exports = {
 		{
 			test: /\.(ttf|eot|woff|woff2)$/,
 			use: {
-				loader: 'url-loader',
-				options: {
-					name: '[name].[ext]',
-				},
+          loader: 'url-loader',
+          options: {
+            name: '[name].[ext]',
+          },
+        },
+		  },
+      { 
+				test: /\.mjs$/,
+				include: /node_modules/,
+				type: 'javascript/auto'
 			},
-		  }]
+    ]
 	},
 	plugins: [
 		new VueLoaderPlugin()
 	],
 	resolve: {
 		alias: {
-			fonts : path.resolve(__dirname, 'src/assets/fonts')
+			fonts : path.resolve(__dirname, 'src/assets/fonts'),
+      components: path.resolve(__dirname, 'src/components'),
+      store: path.resolve(__dirname, 'src/store'),
 		}
 	},
 	devServer: {

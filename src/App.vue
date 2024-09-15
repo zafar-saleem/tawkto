@@ -1,18 +1,16 @@
 <template>
 	<div>
 		<tawk-header></tawk-header>
-		<tawk-home></tawk-home>
+     <router-view></router-view>
 	</div>
 </template>
 
 <script>
-import Header from './components/Header.vue'
-import Home from './pages/home/Home.vue';
+import Header from 'components/header/Header.vue';
 
 export default {
 	components:{
 		'tawk-header': Header,
-		'tawk-home': Home,
 	}
 }
 </script>

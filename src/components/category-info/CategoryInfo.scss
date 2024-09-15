@@ -1,0 +1,53 @@
+@import '../../scss/_variables.scss';
+@import '../../scss/main.scss';
+
+#category-container{
+  width: 100%;
+  opacity: 0px;
+  border: 1px solid $light-white;
+  text-align: center;
+  background: $white;
+  margin-top: 1em;
+
+  .all-list {
+    color: $green;
+    font-size: 13px;
+  }
+
+  .category-name {
+    color: $text-gray;
+    font-size: 13px;
+  }
+
+  .category-description {
+    font-family: $font-family;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 18px;
+    text-align: center;
+    color: $text-gray;
+  }
+
+  .category-info {
+    padding: 1.5em 1em 1em 1em;
+  }
+
+  .description-container {
+    padding: 0 1em 1.5em 1em;
+    border-top: 1px solid $light-white;
+  }
+
+  .icon-container {
+    display: block;
+    text-align: center;
+  }
+
+  .info-icon {
+    width: 20px;
+    text-align: center;
+  }
+
+  a {
+    text-decoration: none;
+  }
+}

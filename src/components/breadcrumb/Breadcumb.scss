@@ -1,0 +1,24 @@
+@import "../../scss/variables";
+@import "../../scss/main";
+
+#container{
+  font-family: $font-family;
+  color: $text-black;
+  padding: 20px;
+  max-width: 1000px;
+  margin: auto;
+
+  .all-list {
+    color: $green;
+    font-size: 13px;
+  }
+
+  .category-name {
+    color: $text-gray;
+    font-size: 13px;
+  }
+
+  a {
+    text-decoration: none;
+  }
+}
