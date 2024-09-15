@@ -1,7 +1,8 @@
 import Vue from 'vue';
 import VueRouter from 'vue-router';
-import Home from '../pages/home/Home.vue';
-import Category from '../pages/category/Category.vue';
+
+const Home = () => import("../pages/home/Home.vue");
+const Category = () => import("../pages/category/Category.vue");
 
 Vue.use(VueRouter)
 
