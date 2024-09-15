@@ -146,6 +146,4 @@ To run the project, below command will help.
 
 
 ## Live
-![Screenshot](screenshots/1.png)
-![Screenshot](screenshots/2.png)
-![Screenshot](screenshots/3.png)
+[Click Here for live demo](https://youtu.be/UwG9qptHEx0)
