@@ -45,6 +45,7 @@ Below are the core technologies I used for this project.
 * [Axios](https://axios-http.com/)
 * [Font-Awesome](https://fontawesome.com/)
 * [Moment](https://momentjs.com/)
+* [Browserslist](https://github.com/browserslist/browserslist)
 
 
 ## Getting Started
