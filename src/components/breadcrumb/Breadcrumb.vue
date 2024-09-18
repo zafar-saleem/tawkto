@@ -1,6 +1,7 @@
 <template>
   <div id="breadcrumb-container">
-    <router-link :to="{ name: 'Home' }" class="all-list">All categories</router-link><span class="category-name"> > {{ store.category.title }}</span>
+    <router-link :to="{ name: 'Home' }" class="all-list">All categories</router-link>
+    <span class="category-name"> > {{ this.pageTitle || store.category.title }}</span>
   </div>
 </template>
 
@@ -9,6 +10,7 @@ import { store } from 'store';
 
 export default {
   name: "Breadcrumb",
+  props: ["pageTitle"],
   data() {
     return {
       store,

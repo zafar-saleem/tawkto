@@ -3,8 +3,8 @@
 		<div id="header-text">
 			<h1>Knowledge base doesn't have to be boring</h1>
 			<h3>Everything you need to manage your messaging</h3>
-      <input type="search" name="search" ref="searchValue" v-on:keyup.enter="handleSearch"  placeholder="Search for answers" />
-      <button v-on:click="handleSearch">
+      <input type="search" name="search" ref="searchValue" v-on:keyup.enter="searchArticle"  placeholder="Search for answers" />
+      <button v-on:click="searchArticle">
         <font-awesome-icon :icon="['fa', 'search']" class="card-icon" />
       </button>
 		</div>
@@ -13,6 +13,7 @@
 
 <script>
 import { store } from 'store';
+import router from '../../router/';
 
 export default {
   name: "Header",
@@ -43,6 +44,10 @@ export default {
       if (store.categories === undefined) store.categories = this.temp;
       if (!store.categories.length) store.categories = [{ ...store.categories }];
       this.preValue = _searchValue;
+      this.$refs.searchValue.value = "";
+    },
+    searchArticle () {
+      router.push({ name: "Search", params: { query: this.$refs.searchValue.value } });
       this.$refs.searchValue.value = "";
     }
   }

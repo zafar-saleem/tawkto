@@ -3,6 +3,7 @@ import VueRouter from 'vue-router';
 
 const Home = () => import("../pages/home/Home.vue");
 const Category = () => import("../pages/category/Category.vue");
+const Search = () => import("../pages/search/Search.vue");
 
 Vue.use(VueRouter)
 
@@ -16,7 +17,12 @@ const routes = [
     path: '/articles/:id',
     name: 'Articles',
     component: Category
- }
+  },
+  { 
+    path: '/search/:query',
+    name: 'Search',
+    component: Search
+  },
 ]
 
 // eslint-disable-next-line no-new
