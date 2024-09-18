@@ -14,7 +14,7 @@
             <font-awesome-icon :icon="['fas', articles.icon]" class="note-icon" />
           </div>
           <div class="info-container">
-            <h2>{{ articles.title }}</h2>
+            <h2 class="article-title">{{ articles.title }}</h2>
             <p>
               {{ articles.content.substring(0, 200) }}
               {{
@@ -71,6 +71,14 @@ export default {
   @import "../../scss/_variables.scss";
   @import "../../scss/main.scss";
   @import "../category/components/article-list/ArticleList.scss";
+
+  #articles-container {
+    .info-container {
+      .article-title {
+        color: $green;
+      }
+    }
+  }
 
   .focus-text {
     color: $green;
