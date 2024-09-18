@@ -33,8 +33,6 @@
   </div>
 </template>
 <script>
-import router from "../../router/";
-import { store } from "store";
 import Axios from "axios";
 import Breadcrumb from "components/breadcrumb/Breadcrumb.vue";
 
